@@ -128,7 +128,6 @@ def kedneypredict():
     ba = data['ba']
     bgr = data['bgr']
     bu = data['bu']
-    perimeter_se = data['perimeter_se']
     sc = data['sc']
     pot = data['pot']
     wc = data['wc']
@@ -139,7 +138,7 @@ def kedneypredict():
     ane = data['ane']
     
 
-    inputk = np.array([[age,bp,al,su,rbc,pc,pcc,ba,bgr,bu,perimeter_se,sc,pot,wc,htn,dm,cad,pe,ane]])
+    inputk = np.array([[age,bp,al,su,rbc,pc,pcc,ba,bgr,bu,sc,pot,wc,htn,dm,cad,pe,ane]])
 
     resultk = kedneymodel.predict(inputk)[0]
 
